@@ -13456,8 +13456,8 @@ function shakeTiles(tiles) {
 
 function checkWinLose(guess, tiles) {
   if (guess === targetWord) {
-    showAlert(winMessage, 6000)
-    showAlert("Great job! You got it!", 5000)
+    showAlert(winMessage, 5000)
+    showAlert("Great job! You got it!", 4000)
     danceTiles(tiles)
     stopInteraction()
     return
@@ -13465,8 +13465,8 @@ function checkWinLose(guess, tiles) {
 
   const remainingTiles = guessGrid.querySelectorAll(":not([data-letter])")
   if (remainingTiles.length === 0) {
-    showAlert(winMessage, 6000)
-    showAlert(("Uh-oh, better luck next time! The word was " +targetWord.toUpperCase()), null)
+    showAlert(winMessage, 5000)
+    showAlert(("Uh-oh, better luck next time! The word was " +targetWord.toUpperCase()), 4000)
     hideWords() 
     stopInteraction()
   }
