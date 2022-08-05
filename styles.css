@@ -232,6 +232,7 @@ body {
   border-radius: .25em;
   cursor: pointer;
   user-select: none;
+  top: 2em;
 }
 
 .refresh-button > svg {
