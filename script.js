@@ -13219,9 +13219,9 @@ const DANCE_ANIMATION_DURATION = 500
 const keyboard = document.querySelector("[data-keyboard]")
 const alertContainer = document.querySelector("[data-alert-container]")
 const guessGrid = document.querySelector("[data-guess-grid]")
-const offsetFromDate = new Date(2022, 3, 1)
+const offsetFromDate = new Date(2022, 8, 1)
 const msOffset = Date.now() - offsetFromDate
-const dayOffset = msOffset / 1000 / 60 / 60 / 12
+const dayOffset = msOffset / 1000 / 60 / 60
 const targetWord = targetWords[Math.floor(dayOffset)]
 const winMessage = winMessages[Math.floor(dayOffset)]
 
