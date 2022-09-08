@@ -13225,11 +13225,11 @@ const dayOffset = msOffset / 1000 / 60 / 60 / 24
 
 const random = Math.floor(Math.random() * targetWords.length)
 const targetWord = targetWords[random]
-const winMessage = winMessage[random]
+const winMessage = winMessages[random]
 
 
-//const targetWord = targetWords[Math.floor(dayOffset)]
-//const winMessage = winMessages[Math.floor(dayOffset)]
+//  const targetWord = targetWords[Math.floor(dayOffset)]
+//  const winMessage = winMessages[Math.floor(dayOffset)]
 
 startInteraction()
 
