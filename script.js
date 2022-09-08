@@ -13223,8 +13223,7 @@ const offsetFromDate = new Date(2022, 6, 6)
 const msOffset = Date.now() - offsetFromDate
 const dayOffset = msOffset / 1000 / 60 / 60 / 24
 
-Random randomizer = new Random();
-String random = targetWords.get(randomizer.nextInt(targetWords.size()));
+const random = Math.floor(Math.random() * targetWords.length)
 const targetWord = targetWords[random]
 const winMessage = winMessage[random]
 
